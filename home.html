@@ -14,18 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- font awesome link-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto ">
-    <div class="logo w-[200x] mx-[100px] pt-32">
-        <img src="./assets/Logo-full.png" alt="">
-    </div>
-    <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
-        <p class="login-number font-medium mb-[12px]">Mobile Number</p>
-        <input id="login-number" type="number" minlength="11" placeholder=" Enter your number" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
-        <p class="login-password font-medium mb-[12px]">4 Digit Pin</p>
-        <input id="login-password" type="password" maxlength="4" placeholder="Enter 4 Digit Pin" class="p-4 rounded-full border-none w-80 mb-10 bg-[#F4F5F7]">
-        <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Login</span></button>
-    </div>
-    <script src="./script/login.js"></script>
+    <header>
+        <nav class="flex justify-between pt-8 mx-6">
+            <div class="logo flex gap-[8px]">
+                <img src="./assets/logo.png" alt="" class="w-15">
+                <div class="balance">
+                    <p class="amount">$45000</p>
+                    <p class="available">Available Balance</p>
+                </div>
+            </div>
+            <div class="logout my-6">
+                <p>Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+            </div>
+        </nav>
+    </header>
+    
 </body>
 </html>
