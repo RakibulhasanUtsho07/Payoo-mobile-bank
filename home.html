@@ -18,19 +18,126 @@
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto ">
     <header>
-        <nav class="flex justify-between pt-8 mx-6">
+        <nav class="flex justify-between pt-8 mx-6 mb-8 line-height-[26px] border-b border-neutral/50">
             <div class="logo flex gap-[8px]">
-                <img src="./assets/logo.png" alt="" class="w-15">
-                <div class="balance">
-                    <p class="amount">$45000</p>
-                    <p class="available">Available Balance</p>
+                <img src="./assets/logo.png" alt="" class="w-10 h-10 my-auto">
+                <div class="balance my-auto text-[18px]">
+                    <p class="amount font-extrabold color-[#080808]">$45000</p>
+                    <p class="available  text-[14px] text-neutral/50">Available Balance</p>
                 </div>
             </div>
-            <div class="logout my-6">
-                <p>Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+            <div class="logout my-6  border border-neutral/50  p-2 rounded">
+                <p class=" text-[14px] text-neutral/50">Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
             </div>
         </nav>
+        <div class="welcome mb-7">
+            <h2 class="text-[24px] font-bold ml-6 leading-[40px] mb-4">Welcome to Pay<span class="text-[#7460FF]">oo</span></h2>
+            <p class="text-[16px] text-neutral/50 ml-6 leading-[26px]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </div>
+        <section class="services grid grid-cols-3 gap-4 ml-6 mr-6 ">
+            <div class="service p-[20px] flex-row justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-1.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center">Add Money</p>
+            </div>
+            <div class="service p-[20px] flex-row justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-2.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center">Cashout</p>
+            </div>
+            <div class="service p-[20px]  flex-col justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-3.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center whitespace-nowrap w-full   ">Transfer Money</p>
+            </div>
+            <div class="service p-[20px] flex-row justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-4.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center">Get Bonus</p>
+            </div>
+            <div class="service p-[20px] flex-row justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-5.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center">Pay Bill</p>
+            </div>
+            <div class="service p-[20px] flex-row justify-center border border-neutral/20 rounded-lg w-[130px] h-[90px] cursor-pointer hover:bg-blue-300">
+                <img src="./assets/opt-6.png" alt="" class="w-6 h-6 flex justify-center mx-auto mb-2">
+                <p class="text-[14px] text-neutral/50 text-center">Transactions</p>
+            </div>
+        </section>
     </header>
+    <main>
+        <section id="cashout" class=" w-11/12 mx-auto py-5">
+            <div class="text-2xl font-bold">Cashout</div>
+             <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Mobile Number</p>
+                 <input id="login-number" type="number" minlength="11" placeholder=" Enter your number" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Amount</p>
+                 <input type="number"class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]" placeholder="Enter amount">
+                 <p class="login-password font-medium mb-[12px] text-neutral/80">Pin Number</p>
+                 <input id="login-password" type="password" maxlength="4" placeholder="Enter 4 Digit Pin" class="p-4 rounded-full border-none w-80 mb-10 bg-[#F4F5F7]">
+                <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Cashout</span></button>
+            </div>
+        </section>
+        <section id="add-money" class=" w-11/12 mx-auto py-5">
+            <div class="text-2xl font-bold">Add Money</div>
+             <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Select Your Bank</p>
+                 <select class="select  w-full bg-base-200 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]">
+                    <option disabled selected>Select  Bank</option>
+                     <option value="SCs">SBs</option>
+                     <option value="SCBs">SCBs</option>
+                     <option value="PCBs">PCBs</option>
+                </select>
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Card Number</p>
+                 <input id="login-number" type="number" minlength="11" placeholder=" Enter 15/16 digit account number" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80"> Cardholder Name</p>
+                 <input type="number"class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]" placeholder="Enter Cardholder Name">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80"> Amount</p>
+                 <input type="number"class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]" placeholder="Enter amount">
+                 <p class="login-password font-medium mb-[12px] text-neutral/80">Pin Number</p>
+                 <input id="login-password" type="password" maxlength="4" placeholder="Enter 4 Digit Pin" class="p-4 rounded-full border-none w-80 mb-10 bg-[#F4F5F7]">
+                <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Add Money</span></button>
+            </div>
+        </section>
+        <section id="money-transfer" class=" w-11/12 mx-auto py-5">
+            <div class="text-2xl font-bold">Money Transfer</div>
+             <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Mobile number</p>
+                 <input id="login-number" type="number" minlength="11" placeholder=" Enter receiver  number" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Amount</p>
+                 <input type="number"class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]" placeholder="Enter amount">
+                 <p class="login-password font-medium mb-[12px] text-neutral/80">Pin Number</p>
+                 <input id="login-password" type="password" maxlength="4" placeholder="Enter 4 Digit Pin" class="p-4 rounded-full border-none w-80 mb-10 bg-[#F4F5F7]">
+                <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Money Transfer</span></button>
+            </div>
+        </section>
+        <section id="get-bonus" class=" w-11/12 mx-auto py-5">
+            <div class="text-2xl font-bold">Get Bonus</div>
+             <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Enter Bonus Coupon</p>
+                 <input id="login-number" type="text" minlength="11" placeholder=" Enter your coupon" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
+                 
+                <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Get Bonus</span></button>
+            </div>
+        </section>
+        <section id="add-money" class=" w-11/12 mx-auto py-5">
+            <div class="text-2xl font-bold">Add Money</div>
+             <div class="login-form bg-white m-6 rounded-[32px] p-8 ">
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Select Your Bank</p>
+                 <select class="select  w-full bg-base-200 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]">
+                    <option disabled selected>Select  Bank</option>
+                     <option value="SCs">SBs</option>
+                     <option value="SCBs">SCBs</option>
+                     <option value="PCBs">PCBs</option>
+                </select>
+                 <p class="login-number font-medium mb-[12px] text-neutral/80">Biller Account Number</p>
+                 <input id="login-number" type="number" minlength="11" placeholder=" Enter 15/16 digit account number" class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7] ">
+                 
+                 <p class="login-number font-medium mb-[12px] text-neutral/80"> Amount To Pay</p>
+                 <input type="number"class="p-4 rounded-full border-none w-80 mb-[12px] bg-[#F4F5F7]" placeholder="Enter amount">
+                 <p class="login-password font-medium mb-[12px] text-neutral/80">Pin Number</p>
+                 <input id="login-password" type="password" maxlength="4" placeholder="Enter 4 Digit Pin" class="p-4 rounded-full border-none w-80 mb-10 bg-[#F4F5F7]">
+                <button id="login-btn" class="login-btn w-80 bg-[#3B25C1] rounded-[32px] py-[14px] curser-pointer  cursor-pointer"><span class="text-[20px] font-semibold text-white">Pay Now</span></button>
+            </div>
+        </section>
+        
+    </main>
     
 </body>
 </html>
